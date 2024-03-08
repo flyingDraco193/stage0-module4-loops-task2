@@ -7,15 +7,15 @@ public class PowerOfTwo {
         }
 
         int counter = 0;
-        int result;
+        int result = 1;
         while (counter <= power) {
             if (counter == 0) {
                 result = 1;
             } else {
-                result = counter * 2;
-                System.out.println(result);
-                counter++;
+                result = result * 2;
             }
+            System.out.println(result);
+            counter++;
         }
     }
 }
